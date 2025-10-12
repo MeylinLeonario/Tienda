@@ -1,0 +1,23 @@
+# ASP.NET Core + Node.js + Visual Studio
+bin/
+obj/
+.vs/
+.vscode/
+node_modules/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.jfm
+*.log
+wwwroot/lib/
+.anaconda/
+.android/
+.conda/
+.condarc
+.bash_history
+.keyring
+
+#appsettings.json
+appsettings.json
