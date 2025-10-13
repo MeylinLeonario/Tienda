@@ -21,11 +21,12 @@ namespace Tienda.src.Infrastructure.Data
         {
             try
             {
-                var context = serviceProvider.GetRequiredService<DataContext>();
-                var configuration = serviceProvider.GetRequiredService<IConfiguration>();
-                var userManager = serviceProvider.GetRequiredService<UserManager<User>>();
-                var roleManager = serviceProvider.GetRequiredService<RoleManager<Role>>();
-
+                using var scope = serviceProvider.CreateScope();
+                var context = scope.ServiceProvider.GetRequiredService<DataContext>();
+                var configuration = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+                var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<Role>>();
+                
                 await context.Database.EnsureCreatedAsync();
                 await context.Database.MigrateAsync();
 
