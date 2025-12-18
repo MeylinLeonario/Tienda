@@ -1,0 +1,107 @@
+2025-10-12 18:29:27.340 -03:00 [INF] Application is starting...
+2025-10-12 18:29:27.465 -03:00 [INF] Configurando Identity
+2025-10-12 18:38:24.990 -03:00 [INF] Application is starting...
+2025-10-12 18:38:25.136 -03:00 [INF] User profile is available. Using 'C:\Users\Windows\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 18:38:25.334 -03:00 [INF] Now listening on: http://localhost:5275
+2025-10-12 18:38:25.339 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 18:38:25.342 -03:00 [INF] Hosting environment: Development
+2025-10-12 18:38:25.348 -03:00 [INF] Content root path: C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda
+2025-10-12 18:45:55.609 -03:00 [INF] Application is shutting down...
+2025-10-12 18:46:06.670 -03:00 [INF] Application is starting...
+2025-10-12 18:46:06.801 -03:00 [INF] User profile is available. Using 'C:\Users\Windows\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 18:46:06.909 -03:00 [INF] Now listening on: http://localhost:5275
+2025-10-12 18:46:06.912 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 18:46:06.919 -03:00 [INF] Hosting environment: Development
+2025-10-12 18:46:06.922 -03:00 [INF] Content root path: C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda
+2025-10-12 19:12:39.909 -03:00 [INF] Application is shutting down...
+2025-10-12 19:13:00.985 -03:00 [INF] Application is starting...
+2025-10-12 19:13:01.273 -03:00 [INF] User profile is available. Using 'C:\Users\Windows\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 19:13:01.404 -03:00 [INF] Now listening on: http://localhost:5275
+2025-10-12 19:13:01.408 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 19:13:01.411 -03:00 [INF] Hosting environment: Development
+2025-10-12 19:13:01.415 -03:00 [INF] Content root path: C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda
+2025-10-12 19:13:10.564 -03:00 [INF] Application is shutting down...
+2025-10-12 19:16:31.704 -03:00 [INF] Application is starting...
+2025-10-12 19:16:32.937 -03:00 [ERR] Error al inicializar la base de datos: Operation is not valid due to the current state of the object.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IdentityOptions options) in C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda\Program.cs:line 29
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Identity.UserManager`1..ctor(IUserStore`1 store, IOptions`1 optionsAccessor, IPasswordHasher`1 passwordHasher, IEnumerable`1 userValidators, IEnumerable`1 passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Tienda.src.Infrastructure.Data.DataSeeder.Initialize(IServiceProvider serviceProvider) in C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda\src\Infrastructure\Data\DataSeeder.cs:line 28
+2025-10-12 19:16:33.094 -03:00 [INF] User profile is available. Using 'C:\Users\Windows\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 19:16:33.206 -03:00 [INF] Now listening on: http://localhost:5275
+2025-10-12 19:16:33.222 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 19:16:33.224 -03:00 [INF] Hosting environment: Development
+2025-10-12 19:16:33.227 -03:00 [INF] Content root path: C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda
+2025-10-12 19:27:36.310 -03:00 [INF] Application is shutting down...
+2025-10-12 19:28:00.757 -03:00 [INF] Application is starting...
+2025-10-12 19:28:01.061 -03:00 [ERR] Error al inicializar la base de datos: Operation is not valid due to the current state of the object.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IdentityOptions options) in C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda\Program.cs:line 29
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Identity.UserManager`1..ctor(IUserStore`1 store, IOptions`1 optionsAccessor, IPasswordHasher`1 passwordHasher, IEnumerable`1 userValidators, IEnumerable`1 passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Tienda.src.Infrastructure.Data.DataSeeder.Initialize(IServiceProvider serviceProvider) in C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda\src\Infrastructure\Data\DataSeeder.cs:line 27
+2025-10-12 19:28:01.166 -03:00 [INF] User profile is available. Using 'C:\Users\Windows\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 19:28:01.249 -03:00 [INF] Now listening on: http://localhost:5275
+2025-10-12 19:28:01.252 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 19:28:01.254 -03:00 [INF] Hosting environment: Development
+2025-10-12 19:28:01.256 -03:00 [INF] Content root path: C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda
+2025-10-12 19:29:28.931 -03:00 [INF] Application is shutting down...
+2025-10-12 19:29:57.597 -03:00 [INF] Application is starting...
+2025-10-12 19:29:57.984 -03:00 [ERR] Error al inicializar la base de datos: Operation is not valid due to the current state of the object.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IdentityOptions options) in C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda\Program.cs:line 29
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Identity.UserManager`1..ctor(IUserStore`1 store, IOptions`1 optionsAccessor, IPasswordHasher`1 passwordHasher, IEnumerable`1 userValidators, IEnumerable`1 passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Tienda.src.Infrastructure.Data.DataSeeder.Initialize(IServiceProvider serviceProvider) in C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda\src\Infrastructure\Data\DataSeeder.cs:line 26
+2025-10-12 19:29:58.125 -03:00 [INF] User profile is available. Using 'C:\Users\Windows\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 19:29:58.235 -03:00 [INF] Now listening on: http://localhost:5275
+2025-10-12 19:29:58.240 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 19:29:58.244 -03:00 [INF] Hosting environment: Development
+2025-10-12 19:29:58.250 -03:00 [INF] Content root path: C:\Users\Windows\Desktop\Web-movil\Tienda\Tienda
+2025-10-12 20:16:40.120 -03:00 [INF] Application is shutting down...
