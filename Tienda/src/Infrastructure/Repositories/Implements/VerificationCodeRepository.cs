@@ -3,7 +3,7 @@ using Tienda.src.Infrastructure.Data;
 using Tienda.src.Domain.Models;
 using Tienda.src.Infrastructure.Repositories.Interfaces;
 
-namespace Tienda_UCN_api.Src.Infrastructure.Repositories.Implements
+namespace Tienda.src.Infrastructure.Repositories.Implements
 {
     /// <summary>
     /// Implementación del repositorio de códigos de verificación.
