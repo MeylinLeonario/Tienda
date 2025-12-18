@@ -84,7 +84,7 @@ namespace Tienda.src.Infrastructure.Data
                     Log.Information("Marcas creadas con éxito.");
                 }
 
-                // 🟪 Crear usuarios
+                //  Crear usuarios
                 if (!await context.Users.AnyAsync())
                 {
                     Role customerRole = await context.Roles.FirstOrDefaultAsync(r => r.Name == "Customer") 
@@ -92,7 +92,7 @@ namespace Tienda.src.Infrastructure.Data
                     Role adminRole = await context.Roles.FirstOrDefaultAsync(r => r.Name == "Admin") 
                         ?? throw new InvalidOperationException("El rol de administrador no está configurado.");
 
-                    // 👑 Crear usuario administrador
+                    //  Crear usuario administrador
                     User adminUser = new User
                     {
                         FirstName = configuration["User:AdminUser:FirstName"] ?? "Admin",
@@ -153,7 +153,7 @@ namespace Tienda.src.Infrastructure.Data
                     Log.Information("Usuarios creados con éxito.");
                 }
 
-                // 🧾 Crear productos e imágenes
+                //  Crear productos e imágenes
                 if (!await context.Products.AnyAsync())
                 {
                     var categoryIds = await context.Categories.Select(c => c.Id).ToListAsync();

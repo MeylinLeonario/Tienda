@@ -46,5 +46,10 @@ namespace Tienda.src.Domain.Models
         /// Fecha de actualización del usuario.
         /// </summary>
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        
+        /// <summary>
+        /// Indica si el usuario ha aceptado los términos y condiciones.
+        /// </summary>
+        public ICollection<VerificationCode> VerificationCodes { get; set; } = new List<VerificationCode>();
     }
 }

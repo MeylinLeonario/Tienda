@@ -1,8 +1,11 @@
-using Tienda.src.Domain.Models;
-using Tienda.src.Infrastructure.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using Tienda.src.Domain.Models;
+using Tienda.src.Infrastructure.Data;
+using Tienda.src.Interfaces;
+using Tienda.src.Repositories;
+using Tienda.src.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 #region Logging Configuration
@@ -38,6 +41,12 @@ Log.Information("Configurando base de datos SQLite");
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite(builder.Configuration.GetSection("ConnectionStrings:SqliteDatabase").Value ?? throw new InvalidOperationException("La cadena de conexión para la base de datos SQLite no está configurada.")));
 #endregion
+
+#region Dependency Injection
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
+#endregion
+
 
 var app = builder.Build();
 
